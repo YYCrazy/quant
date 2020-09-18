@@ -1,0 +1,52 @@
+version: 1
+formatters:
+  simple:
+    format: '[%(asctime)s][%(levelname)s]: %(message)s'
+handlers:
+  console:
+    class : logging.StreamHandler
+    formatter: simple
+    level: DEBUG
+    stream: ext://sys.stdout
+  rotatingFileInfo4Jobs:
+    class: logging.handlers.RotatingFileHandler
+    level: INFO
+    formatter: simple
+    filename: /tmp/quant-jobs-info.log
+    maxBytes: 10485760
+    backupCount: 7
+    encoding: utf8
+  rotatingFileError4Jobs:
+    class: logging.handlers.RotatingFileHandler
+    level: ERROR
+    formatter: simple
+    filename: /tmp/quant-jobs-error.log
+    maxBytes: 10485760
+    backupCount: 7
+    encoding: utf8
+  rotatingFileInfo4Strategies:
+    class: logging.handlers.RotatingFileHandler
+    level: INFO
+    formatter: simple
+    filename: /tmp/quant-strategies-info.log
+    maxBytes: 10485760
+    backupCount: 7
+    encoding: utf8
+  rotatingFileError4Strategies:
+    class: logging.handlers.RotatingFileHandler
+    level: ERROR
+    formatter: simple
+    filename: /tmp/quant-strategies-error.log
+    maxBytes: 10485760
+    backupCount: 7
+    encoding: utf8
+loggers:
+  jobs:
+    level: INFO
+    handlers: [rotatingFileInfo4Jobs, rotatingFileError4Jobs]
+  strategies:
+    level: INFO
+    handlers: [rotatingFileInfo4Strategies, rotatingFileError4Strategies]
+root:
+  level: DEBUG
+  handlers: [console]
