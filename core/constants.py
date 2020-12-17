@@ -27,10 +27,8 @@ FUTURE_MARKET_CLOSING_TIME = '15:00:00'
 # FUTURE_CONTRACT_SYMBOL = [
 #     # 农产品
 #     'C',  # 玉米
-#     'CS',  # 淀粉
 #     # 油脂油料
 #     'A',  # 豆一
-#     'B',  # 豆二
 #     'M',  # 豆粕
 #     'RM',  # 菜粕
 #     'Y',  # 豆油
@@ -42,7 +40,6 @@ FUTURE_MARKET_CLOSING_TIME = '15:00:00'
 #     # 农副产品
 #     'JD',  # 鸡蛋
 #     'AP',  # 苹果
-#     'CJ',  # 红枣
 #     # 煤炭
 #     'ZC',  # 动力煤
 #     'JM',  # 焦煤
@@ -59,8 +56,6 @@ FUTURE_MARKET_CLOSING_TIME = '15:00:00'
 #     'CU',  # 铜
 #     'AL',  # 铝
 #     'ZN',  # 锌
-#     'PB',  # 铅
-#     'SN',  # 锡
 #     # 贵金属
 #     'AU',  # 金
 #     'AG',  # 银
@@ -72,15 +67,14 @@ FUTURE_MARKET_CLOSING_TIME = '15:00:00'
 #     'PG',  # 液化气
 #     # 化工
 #     'MA',  # 甲醇
-#     'TA',  # PTA
 #     'EG',  # 乙二醇
+#     'TA',  # PTA
+#     'PF',  # 短纤
 #     'EB',  # 苯乙烯
 #     'L',  # 聚乙烯
 #     'V',  # 聚氯乙烯
 #     'PP',  # 聚丙烯
 #     'RU',  # 橡胶
-#     'NR',  # 20号胶
-#     'UR',  # 尿素
 #     'SA',  # 纯碱
 #     # 轻工
 #     'FG',  # 玻璃
